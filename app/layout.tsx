@@ -5,13 +5,11 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/navbar";
 import ModelProvider from "@/providers/model-provider";
 import ToastProvider from "@/providers/toast-provider";
+import { constructMetadata } from "@/lib/utils";
 
 const font = Urbanist({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Store",
-  description: "Store",
-};
+export const metadata = constructMetadata();
 
 export default function RootLayout({
   children,
